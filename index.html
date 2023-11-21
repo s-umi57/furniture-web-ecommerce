@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mukko</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>   
+    <div class="hero">
+        <div class="background-opacity">
+            <h1>Mukko</h1>
+        </div>
+    </div>
+
+    <section id="product">
+        <div class="product-container">
+            <div class="title-wrap">
+                <h2>Shop Bestselling Furniture</h2>
+            </div>
+
+            <div class="product-wrapper">
+                
+                <div class="product-item">
+                    <model-viewer src="./models/Laura-sofa.glb" class="product-image" auto-rotate poster="./images/Laura-sofa.png" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/Laura-sofa.png" shadow-intensity="1">
+                        <button class="Hotspot" slot="hotspot-1" data-position="0.26494220053553175m 0.4127312512069367m -0.20928923173120034m" data-normal="0.00963169403295977m -0.04307157280853435m 0.9990255602765401m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation">Natural Suede Leather</div>
+                        </button>
+                        <button class="Hotspot" slot="hotspot-2" data-position="-1.2999147066950127m 0.1690025874090149m 0.3245477918498381m" data-normal="-0.98075845590622m 4.539075572482958e-8m 0.19522512944917014m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation">Metal</div>
+                        </button>
+                        <div class="progress-bar hide" slot="progress-bar">
+                            <div class="update-bar"></div>
+                        </div>
+                        <button slot="ar-button" id="ar-button">
+                            View in your space
+                        </button>
+                        <div id="ar-prompt">
+                            <img src="./images/ar-icon.png">
+                        </div>
+                    </model-viewer>
+                    <h3>Laura Two Seater Sofa</h3>
+                    <p>CAD 2,999</p>
+                </div> 
+
+                <div class="product-item">
+                    <img src="./images/Palermo-Rocking-Chair.png" class="product-image" alt="Palermo Rocking Chair">
+                    <h3>Palermo Rocking Chair</h3>
+                    <p>CAD 899</p>
+                </div>
+    
+                <div class="product-item">
+                    <img src="./images/Torres-Coffee-Table.png" class="product-image" alt="Torres Coffee Table">
+                    <h3>Torres Coffee Table</h3>
+                    <p>CAD 1,299</p>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+</html>

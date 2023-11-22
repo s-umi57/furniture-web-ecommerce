@@ -53,7 +53,23 @@
                 </div>
     
                 <div class="product-item">
-                    <img src="./images/Torres-Coffee-Table.png" class="product-image" alt="Torres Coffee Table">
+                    <model-viewer src="./models/Torres-coffee-table.glb" class="product-image" ar ar-modes="./images/Torres-Coffee-Table.png" camera-controls poster="poster.webp" shadow-intensity="1.47" camera-orbit="-317.9deg 81.31deg 2.582m" field-of-view="30deg" shadow-softness="1" environment-image="legacy" exposure="0.85">
+                        <button class="Hotspot" slot="hotspot-2" data-position="0.20490921972309079m 0.1943847630015218m 1.2630380691238676m" data-normal="-0.004283931245230282m -0.03313100211707809m 0.9994418365426796m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation">Pine Wood</div>
+                        </button><button class="Hotspot" slot="hotspot-3" data-position="-0.49104191114307966m 0.288774066875113m 1.4021820881135438m" data-normal="0.0037558427727587946m 0.9999750254285227m 0.005986832575900372m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation">Stone</div>
+                        </button>
+                        <div class="progress-bar hide" slot="progress-bar">
+                            <div class="update-bar"></div>
+                        </div>
+                        <button slot="ar-button" id="ar-button">
+                            View in your space
+                        </button>
+                        <div id="ar-prompt">
+                            <img src="./images/ar-icon.png">
+                        </div>
+                    </model-viewer>
+                    
                     <h3>Torres Coffee Table</h3>
                     <p>CAD 1,299</p>
                 </div>

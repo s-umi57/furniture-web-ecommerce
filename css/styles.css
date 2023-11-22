@@ -77,8 +77,10 @@ h2 {
 
 .product-wrapper {
     display: flex;
+    flex-wrap: wrap;
     grid-column-gap: 30px;
 }
+
 
 .product-image {
     height: 500px;
@@ -99,6 +101,19 @@ h2 {
     font-size: 17px;
     font-weight: 300;
     padding-bottom: 20px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+    .product-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product-item {
+        width: calc(100% - 20px);
+    }
 }
 
 /* --------- Product Item Section --------- */

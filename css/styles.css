@@ -129,19 +129,6 @@ h2 {
     padding: 5px;
 }
 
-/* #ar-prompt {
-    position: fixed;
-    bottom: 20px; 
-    right: 20px;
-    z-index: 1000; 
-}
-
-#ar-prompt img {
-    width: 20px;
-    height: 20px; 
-    cursor: pointer; 
-} */
-
 .Hotspot {
     position: absolute;
     background-color: #fff; 

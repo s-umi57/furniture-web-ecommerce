@@ -121,14 +121,6 @@ h2 {
 
 /* --------- Product Item Section --------- */
 
-#ar-button {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 1000;
-    padding: 5px;
-}
-
 .Hotspot {
     position: absolute;
     background-color: #fff; 

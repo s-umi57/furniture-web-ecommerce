@@ -119,6 +119,13 @@ h2 {
 
 /* --------- Product Item Section --------- */
 
+#ar-button {
+    position: fixed;
+    bottom: 20px;
+    right: 80px;
+    z-index: 1000;
+}
+
 #ar-prompt {
     position: fixed;
     bottom: 20px; 

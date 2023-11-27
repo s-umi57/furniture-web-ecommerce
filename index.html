@@ -25,11 +25,11 @@
             <div class="product-wrapper">
                 
                 <div class="product-item">
-                    <model-viewer src="./models/Laura-sofa.glb" class="product-image" auto-rotate poster="./images/Laura-sofa.png" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/Laura-sofa.png" shadow-intensity="1">
-                        <button class="Hotspot" slot="hotspot-1" data-position="0.26494220053553175m 0.4127312512069367m -0.20928923173120034m" data-normal="0.00963169403295977m -0.04307157280853435m 0.9990255602765401m" data-visibility-attribute="visible">
+                    <model-viewer id="sofa" src="./models/Laura-sofa-blue.glb" class="product-image" ar ar-modes="./images/Laura-sofa.png" camera-controls poster="./images/Laura-sofa-poster.webp" shadow-intensity="1">
+                        <button class="Hotspot" slot="hotspot-1" data-position="0.26494220053553175m 0.4127312512069367m -0.20928923173120034m" data-normal="0.00963169403295977m -0.04307157280853435m 0.9990255602765401m" data-orbit="20deg 0.05m" data-target="-0.1m 0.02m 0.1m" data-visibility-attribute="visible">
                             <div class="HotspotAnnotation">Natural Suede Leather</div>
                         </button>
-                        <button class="Hotspot" slot="hotspot-2" data-position="-1.2999147066950127m 0.1690025874090149m 0.3245477918498381m" data-normal="-0.98075845590622m 4.539075572482958e-8m 0.19522512944917014m" data-visibility-attribute="visible">
+                        <button class="Hotspot" slot="hotspot-2" data-position="-1.2999147066950127m 0.1690025874090149m 0.3245477918498381m" data-normal="-0.98075845590622m 4.539075572482958e-8m 0.19522512944917014m" data-orbit="-80deg 0.05m" data-target="-0.1m 0.02m 0.1m" data-visibility-attribute="visible">
                             <div class="HotspotAnnotation">Metal</div>
                         </button>
                         <div class="progress-bar hide" slot="progress-bar">
@@ -41,16 +41,28 @@
                         <div id="ar-prompt">
                             <img src="./images/ar-icon.png">
                         </div>
+
+                        <div id="controls" class="dim">
+                            <label for="colorSelect">Select a different color: </label>
+                            <select id="colorSelect">
+                              <option value="./models/Laura-sofa-blue.glb">Blue</option>
+                              <option value="./models/Laura-sofa-green.glb">Green</option>
+                              <option value="./models/Laura-sofa-brown.glb">Brown</option>
+                              <option value="./models/Laura-sofa-grey.glb">Grey</option>
+                            </select><br>
+                          </div>
+
                     </model-viewer>
+
                     <h3>Laura Two Seater Sofa</h3>
                     <p>CAD 2,999</p>
                 </div> 
 
                 <div class="product-item">
-                    <model-viewer src="./models/Palermo-rocking-chair.glb" class="product-image" ar ar-modes="./images/Palermo-Rocking-Chair.png" camera-controls poster="poster.webp" shadow-intensity="1" camera-orbit="-157.5deg 71.1deg 2.974m" field-of-view="30deg">
-                        <button class="Hotspot" slot="hotspot-1" data-position="-6.8625144451634235m 0.7634535846700192m 0.6538274939950561m" data-normal="-0.8476714315626895m 0.30752440530196146m -0.4322983741076705m" data-visibility-attribute="visible">
+                    <model-viewer id="rockingChair" src="./models/Palermo-rocking-chair-yellow.glb" class="product-image" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/Palermo-rocking-chair-poster.webp" shadow-intensity="1" camera-orbit="-5.416deg 73.6deg 2.34m" field-of-view="30deg">
+                        <button class="Hotspot" slot="hotspot-1" data-position="1.1726094505011053m 0.6408815280735431m 0.937548170213514m" data-normal="-0.665622510298793m 0.4144996392007175m 0.620593846961125m" data-orbit="-120deg 0.05m" data-visibility-attribute="visible">
                             <div class="HotspotAnnotation">Natural Cowhide Leather</div>
-                        </button><button class="Hotspot" slot="hotspot-2" data-position="-7.030786759446654m 0.6172414945532587m 0.08854090465249342m" data-normal="-0.8742023532090134m 0.19287297794999092m -0.4456122305553627m" data-visibility-attribute="visible">
+                        </button><button class="Hotspot" slot="hotspot-2" data-position="1.1846821648376649m 0.5081351565788632m 1.4165076015363898m" data-normal="-0.6948850905113999m 0.20158102167144074m 0.6902896512963682m" data-orbit="90deg 0.05m" data-visibility-attribute="visible">
                             <div class="HotspotAnnotation">Oak Wood</div>
                         </button>
                         <div class="progress-bar hide" slot="progress-bar">
@@ -62,18 +74,54 @@
                         <div id="ar-prompt">
                             <img src="./images/ar-icon.png">
                         </div>
-                    </model-viewer>
                     
+                        <div id="controls" class="dim">
+                            <label for="colorSelect2">Select a different color: </label>
+                            <select id="colorSelect2">
+                              <option value="./models/Palermo-rocking-chair-yellow.glb">Yellow</option>
+                              <option value="./models/Palermo-rocking-chair-dark-blue.glb">Dark Blue</option>
+                              <option value="./models/Palermo-rocking-chair-dark-green.glb">Dark Green</option>
+                            </select><br>
+                          </div>
+
+                    </model-viewer>
+
                     <h3>Palermo Rocking Chair</h3>
                     <p>CAD 899</p>
                 </div>
     
                 <div class="product-item">
-                    <model-viewer src="./models/Torres-coffee-table.glb" class="product-image" ar ar-modes="./images/Torres-Coffee-Table.png" camera-controls poster="poster.webp" shadow-intensity="1.47" camera-orbit="-317.9deg 81.31deg 2.582m" field-of-view="30deg" shadow-softness="1" environment-image="legacy" exposure="0.85">
-                        <button class="Hotspot" slot="hotspot-2" data-position="0.20490921972309079m 0.1943847630015218m 1.2630380691238676m" data-normal="-0.004283931245230282m -0.03313100211707809m 0.9994418365426796m" data-visibility-attribute="visible">
-                            <div class="HotspotAnnotation">Pine Wood</div>
-                        </button><button class="Hotspot" slot="hotspot-3" data-position="-0.49104191114307966m 0.288774066875113m 1.4021820881135438m" data-normal="0.0037558427727587946m 0.9999750254285227m 0.005986832575900372m" data-visibility-attribute="visible">
+                    
+                    <model-viewer id="coffeeTable" src="./models/Torres-coffee-table.glb" class="product-image" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/Torres-coffee-table-poster.webp" shadow-intensity="1">
+                        <button class="Hotspot" slot="hotspot-1" data-position="-0.43448158826144656m 0.2875809477032444m 1.4797877751930053m" data-normal="0.010522099682806088m 0.999813776912888m 0.016177048972267155m" data-orbit="-80deg 45deg 0.05m" data-visibility-attribute="visible">
                             <div class="HotspotAnnotation">Stone</div>
+                        </button><button class="Hotspot" slot="hotspot-5" data-position="-0.6800472037273428m 0.14162872562818427m 1.4505969370854432m" data-normal="-0.08825094188343426m 0.021795318667820217m 0.9958597970301116m" data-orbit="-30deg 0.05m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation">Pine Wood</div>
+                        </button>
+                        <div class="progress-bar hide" slot="progress-bar">
+                            <div class="update-bar"></div>
+                        </div>
+                        <button slot="ar-button" id="ar-button">
+                            View in your space
+                        </button>
+                        <div id="ar-prompt">
+                            <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+                        </div>
+                    </model-viewer>
+                    
+                    <h3>Torres Coffee Table</h3>
+                    <p>CAD 1,299</p>
+                </div>
+            
+            </div>
+
+            <div class="product-wrapper">
+                <div class="product-item">
+                    <model-viewer id="accentChair" src="./models/Mohair-accent-chair-dark-blue.glb" class="product-image" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/Mohair-dining-chair.webp" shadow-intensity="1" camera-orbit="-7.108deg 74.19deg 2.155m" field-of-view="30deg">
+                        <button class="Hotspot" slot="hotspot-1" data-position="1.2223013780407932m 0.5901909515291182m 0.7505377131078238m" data-normal="-0.5268876053079585m 0.41219014416816097m 0.7432958606258181m" data-orbit="-60deg 0.05m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation">Natural Cowhide Leather</div>
+                        </button><button class="Hotspot" slot="hotspot-3" data-position="1.3386995579485934m 0.2889737205906713m 1.2102502181702204m" data-normal="0.8167306030901691m -5.854366492471558e-8m 0.5770191695047623m" data-orbit="20deg 0.05m" data-visibility-attribute="visible">
+                            <div class="HotspotAnnotation">Oak Wood</div>
                         </button>
                         <div class="progress-bar hide" slot="progress-bar">
                             <div class="update-bar"></div>
@@ -84,12 +132,22 @@
                         <div id="ar-prompt">
                             <img src="./images/ar-icon.png">
                         </div>
+
+                        <div id="controls" class="dim">
+                            <label for="colorSelect3">Select a different color: </label>
+                            <select id="colorSelect3">
+                              <option value="./models/Mohair-accent-chair-dark-blue.glb">Dark Blue</option>
+                              <option value="./models/Mohair-accent-chair-white.glb">White</option>
+                              <option value="./models/Mohair-accent-chair-yellow.glb">Yellow</option>
+                            </select><br>
+                          </div>
+
                     </model-viewer>
-                    
-                    <h3>Torres Coffee Table</h3>
-                    <p>CAD 1,299</p>
+
+                    <h3>Mohair Accent Chair</h3>
+                    <p>CAD 799</p>
                 </div>
-            
+
             </div>
         </div>
     </section>

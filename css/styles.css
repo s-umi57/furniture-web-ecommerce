@@ -79,6 +79,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     grid-column-gap: 30px;
+    margin-bottom: 50px;
 }
 
 
@@ -160,8 +161,26 @@ h2 {
     display: block; 
 }
 
+#controls {
+    margin-top: 20px;
+    margin-left: 20px;
+}
 
+label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    display: block;
+}
 
+select {
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    box-sizing: border-box;
+}
 
 
 
